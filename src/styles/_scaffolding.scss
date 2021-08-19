@@ -1,0 +1,36 @@
+html {
+  font-size: $font-size;
+  font-family: $font-family;
+  background: $background-color;
+  color: $font-color;
+  max-width: $page-width;
+  line-height: 1.4;
+}
+ul {
+  list-style: none;
+  color: yellow;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: auto;
+}
+:global {
+  .photo-gallery {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-item {
+    width: calc((100%-30px) / 2);
+  }
+
+  .main-item {
+    width: 500px;
+    padding: 30px;
+  }
+  .gallery-img {
+    width: 450px;
+  }
+}
